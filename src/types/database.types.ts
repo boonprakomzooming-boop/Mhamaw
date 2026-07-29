@@ -43,6 +43,7 @@ export interface Employee {
   role: string;
   created_at: string;
   user?: UserProfile;
+  shop?: Shop;
 }
 
 export interface Booking {
