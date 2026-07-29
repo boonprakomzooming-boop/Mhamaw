@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased min-h-screen selection:bg-teal-500 selection:text-white;
+  }
+}
+
+.glass-panel {
+  @apply bg-slate-900/70 backdrop-blur-md border border-slate-800/80 rounded-2xl shadow-xl;
+}
+
+.glass-card {
+  @apply bg-slate-900/60 backdrop-blur-sm border border-slate-800/60 rounded-xl transition-all duration-300 hover:border-teal-500/40 hover:shadow-lg hover:shadow-teal-500/5;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-teal-400 via-emerald-400 to-cyan-400 bg-clip-text text-transparent;
+}
+
+.gradient-button {
+  @apply bg-gradient-to-r from-teal-500 to-emerald-600 hover:from-teal-400 hover:to-emerald-500 text-white font-medium shadow-md shadow-teal-900/20 active:scale-[0.99] transition-all duration-200;
+}
